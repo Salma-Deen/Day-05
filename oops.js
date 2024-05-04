@@ -38,5 +38,152 @@ Movie { title: 'Casino Royale', studio: 'Eon Studio', rating: 'PG13' }
   Movie { title: 'SZS', studio: 'AXY', rating: 'PG' }
 ]
 
-2)
+2)Circle - Class
+Convert the UML diagram to Javascript class.
+
+// CODING:
+class Circle
+{
+  constructor(radius,color)
+  {
+    this.radius=radius;
+    this.color=color;
+  }
+  getRadius()
+  {
+    return this.radius;
+  }
+  setRadius(radius)
+  {
+  return cir.getRadius()
+  }
+  getColor()
+  {
+    return this.color;
+  }
+  setColor(color)
+  {
+    return cir.getColor()
+  }
+  toString()
+  {
+    return `Circle [radius=${this.radius} color=${this.color}]`
+  }
+  getArea()
+  {
+    let ar=Math.PI*(this.radius)*(this.radius);
+    return ar.toFixed(3);
+  }
+  getCircumference()
+  {
+    let circum=2*Math.PI*(this.radius);
+    return circum.toFixed(4);
+  }
+
+}
+var cir=new Circle(1.0,"RED")
+console.log(cir.toString());
+console.log(cir.getArea());
+console.log(cir.getCircumference());
+var cir1=new Circle(2.2,"GREEN")
+console.log(cir1.toString());
+console.log(cir1.getArea());
+console.log(cir1.getCircumference());
+
+// OUTPUT:
+Circle [radius=1 color=RED]
+3.142
+6.2832
+Circle [radius=2.2 color=GREEN]
+15.205
+13.8230
+
+
+3)Write a “person” class to hold all the details.
+
+  // CODING:
+
+  class Person
+{
+    constructor(firstname,lastname,age,gender,qualification,email,city,mobilenumber)
+    {
+    this.firstname=firstname;
+    this.lastname=lastname;
+    this.age=age;
+    this.gender=gender;
+    this.qualification=qualification;
+    this.email=email;
+    this.city=city;
+    this.mobilenumber=mobilenumber;
+    }
+
+    getp()
+    {
+       return `Name: ${this.firstname} ${this.lastname}
+       Age:${this.age}
+       Gender:${this.gender}
+       Qualification:${this.qualification}
+       Email:${this.email}
+       City:${this.city}
+       Mobile Number:${this.mobilenumber}`
+             }
+}
+var p1=new Person('Shanthi','Priya',23,"Female",'MBA','shanthi05@gmail.com','Coimbatore','8769876540')
+var p2=new Person('Ravi','Kumar',32,'Male','M.E','rkumar05@gmail.com','Chennai',9764871403)
+console.log(p1.getp())
+console.log(p2.getp())
+
+// OUTPUT:
+
+Name: Salma M
+label: Developer
+Email: sal@gmail.com
+Phone: 8760907651
+location:
+Address: 24,Sakthi Colony
+postal code: 641606
+city: Tiruppur
+Country Code: INDIA
+profile:
+network: facebook
+username: XY
+url: https:/
+Education:
+Institution: Bharathiar University
+College: Maharani Arts and Science College
+Degree: M.Sc
+Duration: 2012-2014
+score: 82
+skills:
+name: Web Development
+Level: Beginner
+Key Words: HTML,VB,JS
+Languages:
+Known Languages: Tamil,Hindi,English
+Fluency: Tamil,Hindi
+Interest:
+Name: Watching Movies
+Key words: Rom-Com Movies
+Reference:
+Name: 
+Mobile Number: 675*******
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
