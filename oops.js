@@ -135,55 +135,69 @@ console.log(p2.getp())
 
 // OUTPUT:
 
-Name: Salma M
-label: Developer
-Email: sal@gmail.com
-Phone: 8760907651
-location:
-Address: 24,Sakthi Colony
-postal code: 641606
-city: Tiruppur
-Country Code: INDIA
-profile:
-network: facebook
-username: XY
-url: https:/
-Education:
-Institution: Bharathiar University
-College: Maharani Arts and Science College
-Degree: M.Sc
-Duration: 2012-2014
-score: 82
-skills:
-name: Web Development
-Level: Beginner
-Key Words: HTML,VB,JS
-Languages:
-Known Languages: Tamil,Hindi,English
-Fluency: Tamil,Hindi
-Interest:
-Name: Watching Movies
-Key words: Rom-Com Movies
-Reference:
-Name: 
-Mobile Number: 675*******
+Name: Shanthi Priya
+       Age:23
+       Gender:Female
+       Qualification:MBA
+       Email:shanthi05@gmail.com
+       City:Coimbatore
+       Mobile Number:8769876540
+Name: Ravi Kumar
+       Age:32
+       Gender:Male
+       Qualification:M.E
+       Email:rkumar05@gmail.com
+       City:Chennai
+       Mobile Number:9764871403
+
+4)write a class to calculate the Uber price.
+
+// CODING:
+  class Uber
+{
+    constructor(car,basefare,km)
+    {
+     this.car=car;
+     this.basefare=basefare;
+     this.km=km;
+    
+    }
+   tata()
+   {
+
+this.basefare=30;
+let tf=(this.basefare)*(this.km);
+return `The Total fare for the car ${this.car} and for ${this.km} km is ${tf}`
+
+   }
+   sedan()
+   {
+      this.basefare=35;
+      let tf=(this.basefare)*(this.km);
+      return `The Total fare for the car ${this.car} and for ${this.km} km is ${tf}`
+        
+   }
+   mahindra()
+   {
+      this.basefare=40;
+      let tf=(this.basefare)*(this.km);
+      return `The Total fare for the car ${this.car} and for ${this.km} km is ${tf}`
+          
+   }
+}
 
 
+var ub=new Uber("tata",(this.basefare),4)
+console.log(ub.tata())
+var ub1=new Uber("sedan",(this.basefare),4)
+console.log(ub1.sedan())
+var ub2=new Uber("sedan",(this.basefare),4)
+console.log(ub2.mahindra())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+// OUTPUT:
+The Total fare for the car tata and for 4 km is 120
+The Total fare for the car sedan and for 4 km is 140
+The Total fare for the car sedan and for 4 km is 160
 
 
 
